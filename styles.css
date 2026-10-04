@@ -1,0 +1,468 @@
+/* ---------------------------------------------
+   Tokens — white & navy palette
+--------------------------------------------- */
+:root {
+  --ink: #14171c;
+  --paper: #ffffff;
+  --page-bg: #f4f6f9;
+  --navy: #1b2a4a;
+  --navy-light: #3c5478;
+  --navy-tint: #eef1f6;
+  --line: #e2e5ea;
+  --grey: #5b5f66;
+
+  /* Accent used for headings/links sitting ON a card surface
+     (--paper). Equals --navy in light mode; gets a lighter
+     value in dark mode since --paper becomes dark there. */
+  --accent: var(--navy);
+
+  /* Text color for things sitting on a permanently-dark bar
+     (masthead, footer, solid-navy buttons/toast) — stays light
+     in BOTH themes, unlike --paper which flips. */
+  --on-dark: #f5f6f8;
+
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --content-width: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--page-bg);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.wrap {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-color: var(--navy-light);
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--navy-light); }
+
+/* ---------------------------------------------
+   Masthead
+--------------------------------------------- */
+.masthead {
+  background: var(--navy);
+  color: var(--on-dark);
+  padding: 56px 0 48px;
+}
+
+.masthead .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.portrait {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15px;
+  color: #a9b8d1;
+}
+
+.masthead h1 {
+  margin: 0 0 8px;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.last-name { color: #c3cee2; }
+
+.masthead .title {
+  margin: 0 0 16px;
+  font-size: 15.5px;
+  color: #d4dbe8;
+}
+
+.contact-row {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.contact-row a { color: var(--on-dark); }
+.contact-row a:hover { color: #c3cee2; }
+
+/* ---------------------------------------------
+   Main sections — white cards on light background
+--------------------------------------------- */
+main {
+  padding: 40px 0 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 28px 32px;
+  box-shadow: 0 1px 3px rgba(20, 30, 50, 0.05);
+}
+
+section h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+section p { margin: 0 0 12px; color: var(--ink); max-width: 68ch; }
+
+.entry { margin-bottom: 26px; }
+.entry:last-child { margin-bottom: 0; }
+
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.entry-head h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--ink);
+}
+
+.entry-date {
+  font-size: 13px;
+  color: var(--grey);
+  white-space: nowrap;
+}
+
+.entry-sub {
+  margin: 4px 0 10px;
+  font-size: 14.5px;
+  color: var(--grey);
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 20px;
+}
+.bullets li { margin-bottom: 6px; }
+.bullets li:last-child { margin-bottom: 0; }
+
+/* ---------------------------------------------
+   Skills grid
+--------------------------------------------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.skills-grid h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0 0 10px;
+  color: var(--accent);
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.tags li {
+  background: var(--navy-tint);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 6px 10px;
+  color: var(--ink);
+}
+
+/* ---------------------------------------------
+   Footer
+--------------------------------------------- */
+.site-footer {
+  background: var(--navy);
+  color: var(--on-dark);
+  padding: 24px 0;
+}
+.site-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #d4dbe8;
+}
+.site-footer a { color: var(--on-dark); }
+.site-footer a:hover { color: #c3cee2; }
+
+/* ---------------------------------------------
+   Responsive
+--------------------------------------------- */
+@media (max-width: 640px) {
+  .masthead .wrap { flex-direction: column-reverse; text-align: center; align-items: center; }
+  .contact-row { justify-content: center; }
+  .masthead h1 { font-size: 32px; }
+  .skills-grid { grid-template-columns: 1fr; }
+  section { padding: 24px 20px; }
+}
+
+/* ---------------------------------------------
+   Accessibility
+--------------------------------------------- */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--navy-light);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---------------------------------------------
+   Assignment 2 — interactivity styling
+--------------------------------------------- */
+
+/* Dark mode theme toggle button */
+.theme-toggle {
+  align-self: flex-start;
+  margin-top: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--on-dark);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.theme-toggle:hover { background: rgba(255, 255, 255, 0.22); }
+
+/* Section show/hide controls */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+}
+.section-head h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.toggle-btn {
+  flex-shrink: 0;
+  background: var(--navy-tint);
+  color: var(--accent);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-family: var(--sans);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.toggle-btn:hover { background: #dfe6f0; }
+
+.collapsed { display: none; }
+
+/* Dynamic "add a skill" form */
+.add-skill {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.add-skill label {
+  display: block;
+  font-size: 13px;
+  color: var(--grey);
+  margin-bottom: 6px;
+}
+.add-skill-row {
+  display: flex;
+  gap: 10px;
+  max-width: 360px;
+}
+.add-skill-row input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-family: var(--sans);
+  font-size: 14px;
+}
+.add-skill-row button,
+.contact-form button,
+form#addSkillForm button {
+  background: var(--navy);
+  color: var(--on-dark);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.add-skill-row button:hover,
+.contact-form button:hover { background: var(--navy-light); }
+
+.tags li.skill-added {
+  animation: skillPop 0.3s ease;
+}
+@keyframes skillPop {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+}
+.form-row { display: flex; flex-direction: column; gap: 6px; }
+.form-row label { font-size: 13px; color: var(--grey); }
+.form-row input,
+.form-row textarea {
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-family: var(--sans);
+  font-size: 14px;
+  resize: vertical;
+}
+.form-row input.invalid,
+.form-row textarea.invalid { border-color: #b3261e; }
+.field-error {
+  font-size: 12.5px;
+  color: #b3261e;
+  min-height: 16px;
+}
+.contact-form button { align-self: flex-start; }
+.form-status {
+  margin: 0;
+  font-size: 14px;
+  min-height: 20px;
+}
+.form-status.success { color: #1e7a45; }
+.form-status.error { color: #b3261e; }
+
+/* Welcome toast */
+.toast {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 100;
+  background: var(--navy);
+  color: var(--on-dark);
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 6px 18px rgba(20, 30, 50, 0.25);
+  opacity: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ---------------------------------------------
+   Dark mode theme
+--------------------------------------------- */
+body[data-theme="dark"] {
+  --ink: #e8eaed;
+  --paper: #1c2431;
+  --page-bg: #10151d;
+  --navy: #3c5478;
+  --navy-light: #7593c2;
+  --navy-tint: #232d3d;
+  --line: #3a4659;
+  --grey: #b8c0cd;
+
+  /* Headings/links on dark card surfaces need a lighter accent
+     than --navy itself (which stays dark for button/toast fills) */
+  --accent: #9fb7e0;
+}
+body[data-theme="dark"] .masthead,
+body[data-theme="dark"] .site-footer {
+  background: #0c1017;
+}
+body[data-theme="dark"] section {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+body[data-theme="dark"] .theme-toggle {
+  background: rgba(255, 255, 255, 0.08);
+}
+body[data-theme="dark"] .toggle-btn:hover {
+  background: #2c3851;
+}
+body[data-theme="dark"] .field-error,
+body[data-theme="dark"] .form-status.error {
+  color: #ff8a80;
+}
+body[data-theme="dark"] .form-status.success {
+  color: #74d99f;
+}
+body[data-theme="dark"] .form-row input.invalid,
+body[data-theme="dark"] .form-row textarea.invalid {
+  border-color: #ff8a80;
+}
+body[data-theme="dark"] .entry-sub,
+body[data-theme="dark"] .entry-date {
+  color: var(--grey);
+}
+
+@media (max-width: 640px) {
+  .section-head { flex-wrap: wrap; }
+}
