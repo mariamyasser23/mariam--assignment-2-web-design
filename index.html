@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariam Yasser — CV</title>
+  <meta name="description" content="Personal CV webpage of Mariam Yasser." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="welcomeToast" class="toast" role="status" aria-live="polite"></div>
+
+  <header class="masthead">
+    <div class="wrap">
+      <div class="masthead-text">
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1>Mariam <span class="last-name">Yasser</span></h1>
+        <p class="title">Business Administration Student &middot; Concentration in MICT</p>
+        <ul class="contact-row">
+          <li><a href="mailto:mariamyasser@aucegypt.edu">mariamyasser@aucegypt.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/mariam-yasser-608910274" target="_blank" rel="noopener">linkedin.com/in/mariam-yasser-608910274</a></li>
+          <li>Cairo, Egypt</li>
+        </ul>
+        <button type="button" id="themeToggle" class="theme-toggle" aria-pressed="false">🌙 Dark mode</button>
+      </div>
+      <img class="portrait" src="images/avatar.svg" alt="Avatar of Mariam Yasser" />
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section id="profile" aria-labelledby="profile-heading">
+      <h2 id="profile-heading">Profile</h2>
+      <p>
+        Motivated Business Administration student with a concentration in Management of
+        Information and Communication Technology. Skilled at translating data-heavy problems
+        into clear, client-ready deliverables, with hands-on experience across operations,
+        research, and financial analysis. Seeking opportunities in consulting and analytics
+        where structured thinking and attention to detail make an impact.
+      </p>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <article class="entry">
+        <div class="entry-head">
+          <h3>American University in Cairo (AUC)</h3>
+          <span class="entry-date">Expected June 2027</span>
+        </div>
+        <p class="entry-sub">B.A. in Business Administration &middot; Concentration in Management of Information and Communication Technology (MICT)</p>
+        <ul class="bullets">
+          <li>Cumulative GPA: 3.8 / 4.0 &mdash; Dean's List, four consecutive semesters</li>
+          <li>Relevant coursework: Data Analytics, Financial Modeling, Digital Marketing, Organizational Behavior</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="section-head">
+        <h2 id="experience-heading">Projects &amp; Experience</h2>
+        <button type="button" class="toggle-btn" data-target="experience-body" aria-expanded="true">Hide</button>
+      </div>
+      <div id="experience-body">
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Unilever &mdash; Marketing Co-op</h3>
+          <span class="entry-date">Jun 2026 &ndash; Aug 2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Supported the planning and execution of a brand campaign, coordinating with a team of 6 across creative and media.</li>
+          <li>Analyzed campaign performance data to inform recommendations, presented to the marketing manager.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Sample Research Center &mdash; Research Associate</h3>
+          <span class="entry-date">Jan 2026 &ndash; May 2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Conducted case-style analysis on a market-entry project, synthesizing data from 15+ sources into a client-ready exhibit.</li>
+          <li>Co-authored a research brief presented to faculty and industry partners.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Personal Project &mdash; Budget Tracker Dashboard</h3>
+          <span class="entry-date">2025</span>
+        </div>
+        <ul class="bullets">
+          <li>Built a personal finance dashboard to track monthly spending across categories using spreadsheet formulas and charts.</li>
+        </ul>
+      </article>
+      </div>
+    </section>
+
+    <section id="leadership" aria-labelledby="leadership-heading">
+      <h2 id="leadership-heading">Leadership &amp; Involvement</h2>
+      <ul class="bullets">
+        <li><strong>Student Ambassador</strong> &mdash; Represented the university at 5+ recruitment and outreach events per semester.</li>
+        <li><strong>Peer Leader</strong> &mdash; Mentored a cohort of 10 incoming first-year students through their transition to university life.</li>
+        <li><strong>Club Treasurer, Business Society</strong> &mdash; Managed a $2,000 annual budget across 6 campus events.</li>
+      </ul>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-head">
+        <h2 id="skills-heading">Skills</h2>
+        <button type="button" class="toggle-btn" data-target="skills-body" aria-expanded="true">Hide</button>
+      </div>
+      <div id="skills-body">
+      <div class="skills-grid">
+        <div>
+          <h3>Analytical &amp; Technical</h3>
+          <ul class="tags" id="skillsList">
+            <li>Excel (macros, pivot tables)</li>
+            <li>Data analysis &amp; visualization</li>
+            <li>Financial modeling basics</li>
+            <li>HTML &amp; CSS</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Business &amp; Communication</h3>
+          <ul class="tags">
+            <li>Client-facing presentations</li>
+            <li>Stakeholder communication</li>
+            <li>Project coordination</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Languages</h3>
+          <ul class="tags">
+            <li>Arabic (native)</li>
+            <li>English (fluent)</li>
+            <li>French (conversational)</li>
+          </ul>
+        </div>
+      </div>
+
+      <form id="addSkillForm" class="add-skill" aria-label="Add a new skill">
+        <label for="newSkillInput">Add a skill</label>
+        <div class="add-skill-row">
+          <input type="text" id="newSkillInput" name="newSkill" placeholder="e.g. Python" autocomplete="off" />
+          <button type="submit">Add</button>
+        </div>
+      </form>
+      </div>
+    </section>
+
+    <section id="certifications" aria-labelledby="certifications-heading">
+      <div class="section-head">
+        <h2 id="certifications-heading">Certifications &amp; Achievements</h2>
+        <button type="button" class="toggle-btn" data-target="certifications-body" aria-expanded="true">Hide</button>
+      </div>
+      <div id="certifications-body">
+      <ul class="bullets">
+        <li>McKinsey Forward Program (2024)</li>
+        <li>Entrepreneurship Exchange Program (2025)</li>
+      </ul>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in Touch</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" name="name" placeholder="Your name" />
+          <span class="field-error" id="nameError"></span>
+        </div>
+        <div class="form-row">
+          <label for="contactEmail">Email</label>
+          <input type="text" id="contactEmail" name="email" placeholder="you@example.com" />
+          <span class="field-error" id="emailError"></span>
+        </div>
+        <div class="form-row">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" rows="4" placeholder="Say hello..."></textarea>
+          <span class="field-error" id="messageError"></span>
+        </div>
+        <button type="submit">Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Let's connect &mdash; <a href="mailto:mariamyasser@aucegypt.edu">mariamyasser@aucegypt.edu</a> &middot; <a href="https://www.linkedin.com/in/mariam-yasser-608910274" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

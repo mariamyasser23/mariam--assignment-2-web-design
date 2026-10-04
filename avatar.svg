@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Illustrated avatar of a professional woman with long brunette hair">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="188"/>
+    </clipPath>
+  </defs>
+
+  <!-- background -->
+  <circle cx="200" cy="200" r="188" fill="#eef1f6"/>
+  <circle cx="200" cy="200" r="188" fill="none" stroke="#1B2A4A" stroke-width="3"/>
+
+  <g clip-path="url(#circleClip)">
+
+    <!-- head, drawn first so hair overlaps its edges cleanly -->
+    <ellipse cx="200" cy="178" rx="66" ry="76" fill="#E7AC80"/>
+
+    <!-- ears -->
+    <ellipse cx="132" cy="188" rx="9" ry="15" fill="#E7AC80"/>
+    <ellipse cx="268" cy="188" rx="9" ry="15" fill="#E7AC80"/>
+    <!-- earrings -->
+    <circle cx="132" cy="200" r="4" fill="#C79A5B"/>
+    <circle cx="268" cy="200" r="4" fill="#C79A5B"/>
+
+    <!-- hair behind head, long and flowing past the shoulders -->
+    <path d="M 200 42
+             C 268 42 300 98 296 170
+             C 294 230 292 290 300 350
+             C 300 375 286 392 268 400
+             L 250 400
+             C 258 340 256 260 252 195
+             C 250 148 232 122 200 122
+             C 168 122 150 148 148 195
+             C 144 260 142 340 150 400
+             L 132 400
+             C 114 392 100 375 100 350
+             C 108 290 106 230 104 170
+             C 100 98 132 42 200 42 Z" fill="#3E2618"/>
+    <!-- soft hair sheen highlights -->
+    <path d="M 158 90 C 144 130 140 175 146 215" stroke="#5A3822" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M 242 90 C 256 130 260 175 254 215" stroke="#5A3822" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.55"/>
+
+    <!-- neck -->
+    <rect x="180" y="208" width="40" height="58" rx="8" fill="#D89A6E"/>
+
+    <!-- shoulders / blazer -->
+    <path d="M 200 250
+             C 130 250 78 302 70 400
+             L 330 400
+             C 322 302 270 250 200 250 Z" fill="#FAFBFC"/>
+
+    <!-- hair strands resting in front of the shoulders -->
+    <path d="M 150 260 C 146 300 148 345 156 385 L 172 385 C 166 345 166 300 168 262 Z" fill="#3E2618"/>
+    <path d="M 250 260 C 254 300 252 345 244 385 L 228 385 C 234 345 234 300 232 262 Z" fill="#3E2618"/>
+
+    <!-- blush -->
+    <ellipse cx="165" cy="200" rx="14" ry="8" fill="#E8896B" opacity="0.35"/>
+    <ellipse cx="235" cy="200" rx="14" ry="8" fill="#E8896B" opacity="0.35"/>
+
+    <!-- eyebrows -->
+    <path d="M 166 154 Q 179 146 194 152" stroke="#3E2618" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M 206 152 Q 221 146 234 154" stroke="#3E2618" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+
+    <!-- eyes with lashes -->
+    <ellipse cx="178" cy="174" rx="8" ry="6.5" fill="#2B211C"/>
+    <ellipse cx="222" cy="174" rx="8" ry="6.5" fill="#2B211C"/>
+    <path d="M 168 169 L 161 164" stroke="#2B211C" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 232 169 L 239 164" stroke="#2B211C" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- nose -->
+    <path d="M 200 180 L 194 204 Q 200 210 206 204 Z" fill="#D08F63"/>
+
+    <!-- lips -->
+    <path d="M 178 222 Q 200 219 222 222 Q 200 237 178 222 Z" fill="#B5584A"/>
+
+    <!-- blazer lapels -->
+    <path d="M 200 258 L 168 400 L 200 320 Z" fill="#1B2A4A"/>
+    <path d="M 200 258 L 232 400 L 200 320 Z" fill="#1B2A4A"/>
+
+    <!-- collar accent -->
+    <rect x="192" y="310" width="16" height="90" fill="#3C5478"/>
+
+  </g>
+</svg>
